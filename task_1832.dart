@@ -19,21 +19,31 @@
 // sentence consists of lowercase English letters.
 
 class Solution {
-  List allEnglishLetters = ['a', 'b', 'c', 'd','e', 'f',
-                            'g', 'h', 'i', 'j', 'k', 'l',
-                            'm', 'n', 'o', 'p', 'q', 'r', 
-                            's', 't', 'u', 'v', 'w', 'x',
-                            'y', 'z'];
-    
   bool checkIfPangram(String sentence) {
-    for (var letter in allEnglishLetters) {
-        if (!sentence.contains(letter)) {
-            return false;
-        }
+    Set uniqueLetters = sentence.split('').toSet();
+    if (uniqueLetters.length == 26) {
+      return true;
     }
-    return true;
+    return false;
   }
 }
+
+// class Solution {
+//   List allEnglishLetters = ['a', 'b', 'c', 'd','e', 'f',
+//                             'g', 'h', 'i', 'j', 'k', 'l',
+//                             'm', 'n', 'o', 'p', 'q', 'r', 
+//                             's', 't', 'u', 'v', 'w', 'x',
+//                             'y', 'z'];
+    
+//   bool checkIfPangram(String sentence) {
+//     for (var letter in allEnglishLetters) {
+//         if (!sentence.contains(letter)) {
+//             return false;
+//         }
+//     }
+//     return true;
+//   }
+// }
 
 // class Solution {
 //   bool checkIfPangram(String sentence) {
@@ -52,5 +62,5 @@ class Solution {
 
 void main(List<String> args) {
   Solution solution = Solution();
-  print(solution.checkIfPangram('thequickbrownfoxjumpsoverthelazydog'));
+  print(solution.checkIfPangram('thequickbrownfoxjumpsoverthelazydoggggg'));
 }
