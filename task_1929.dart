@@ -21,13 +21,19 @@
 
 class Solution {
   List<int> getConcatenation(List<int> nums) {
-    List<int> ans = List.generate(nums.length * 2, (index) => 0);
-    for (var i = 0; i < nums.length; i++) {
-      ans[i] = ans[i + nums.length] = nums[i];
-    }
-    return ans;
+    return [...nums, ...nums];
   }
 }
+
+// class Solution {
+//   List<int> getConcatenation(List<int> nums) {
+//     List<int> ans = List.generate(nums.length * 2, (index) => 0);
+//     for (var i = 0; i < nums.length; i++) {
+//       ans[i] = ans[i + nums.length] = nums[i];
+//     }
+//     return ans;
+//   }
+// }
 
 // class Solution {
 //   List<int> getConcatenation(List<int> nums) {
