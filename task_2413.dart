@@ -15,12 +15,18 @@
 
 // 1 <= n <= 150
 
+class Solution {
+  int smallestEvenMultiple(int n) {
+    if (n % 2 == 0) return n;
+    return n * 2;
+  }
+}
+
 // if n is even, return n << 0
 // if n is odd, return n << 1
-
-class Solution {
-  int smallestEvenMultiple(int n) => n << (n & 1);
-}
+// class Solution {
+//   int smallestEvenMultiple(int n) => n << (n & 1);
+// }
 
 // class Solution {
 //   int smallestEvenMultiple(int n) {
