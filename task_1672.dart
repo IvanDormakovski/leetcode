@@ -34,8 +34,8 @@
 class Solution {
   int maximumWealth(List<List<int>> accounts) {
     List<int> wealths = accounts
-        .map((e) => e.fold(
-            0, (previousValue, element) => (previousValue as int) + element))
+        .map((e) =>
+            e.fold(0, (previousValue, element) => (previousValue) + element))
         .toList();
     wealths.sort((first, second) => second - first);
     return wealths.first;
