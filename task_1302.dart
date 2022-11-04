@@ -21,11 +21,14 @@ class TreeNode {
   TreeNode? left;
   TreeNode? right;
   TreeNode([this.val = 0, this.left, this.right]);
+
+  @override
+  String toString() {
+    return 'TreeNode: val = $val';
+  }
 }
 
 class Solution {
-  Queue queue = Queue();
-
   int deepestLeavesSum(TreeNode? root) {
     int res = 0, i = 0;
     Queue queue = Queue();
@@ -42,40 +45,6 @@ class Solution {
     return res;
   }
 }
-
-// обход дерева (не решение)
-// class Solution {
-//   Queue queue = Queue();
-
-//   int deepestLeavesSum(TreeNode? root) {
-//     if (root == null) return 0;
-//     List<int> values = [];
-//     int count = 0;
-//     Queue queue = Queue();
-//     queue.add(root);
-//     while (queue.length > 0) {
-//       TreeNode tempTreeNode = queue.removeFirst();
-//       values.add(tempTreeNode.val);
-//       print(tempTreeNode.val);
-//       if (tempTreeNode.left != null) {
-//         queue.add(tempTreeNode.left);
-//       }
-//       if (tempTreeNode.right != null) {
-//         queue.add(tempTreeNode.right);
-//       }
-//       if (tempTreeNode.left == null && tempTreeNode.right == null) {
-//         count++;
-//       }
-//     }
-//     print('-' * 30);
-//     print(count);
-//     print(values);
-//     return values.elementAt(values.length - 1) +
-//         values.elementAt(values.length - 2) +
-//         values.elementAt(values.length - 3) +
-//         values.elementAt(values.length - 4);
-//   }
-// }
 
 void main(List<String> args) {
   Solution solution = Solution();
