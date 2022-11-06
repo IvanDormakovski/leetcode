@@ -32,6 +32,9 @@ class Solution {
 
     String res = s;
     print('res = $res');
+
+    // Lexicographically minimal string rotation
+    // For example, the lexicographically minimal rotation of "bbaaccaadd" would be "aaccaaddbb"
     for (var i = 1; i < s.length; i++) {
       String tmp = s.substring(i) + s.substring(0, i);
       print('tmp = $tmp');
@@ -43,5 +46,5 @@ class Solution {
 
 void main(List<String> args) {
   Solution solution = Solution();
-  print(solution.orderlyQueue('bac', 1));
+  print(solution.orderlyQueue('bbaaccaadd', 1));
 }
