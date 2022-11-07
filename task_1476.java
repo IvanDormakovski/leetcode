@@ -110,7 +110,7 @@ class SubrectangleQueries {
 //     }
 // }
 
-class Runner {
+class Runner1476 {
     public static void main(String[] args) {
         int[][] rectangle = {{1,2,1},{4,3,4},{3,2,1},{1,1,1}};
         SubrectangleQueries obj = new SubrectangleQueries(rectangle);
