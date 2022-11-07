@@ -83,7 +83,7 @@ class Solution1470 {
 
 class Runner1470 {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution1470 solution = new Solution1470();
         int[] res = solution.shuffle(new int[] { 2, 5, 1, 3, 4, 7 }, 3);
         System.out.print("\n");
         for (int i = 0; i < res.length; i++) {

@@ -88,7 +88,7 @@ class Solution1379 {
 
 class Runner1379 {
   public static void main(String[] args) throws CloneNotSupportedException {
-    Solution solution = new Solution();
+    Solution1379 solution = new Solution1379();
 
     TreeNode original2 = new TreeNode(3);
     original2.left = new TreeNode(6);
