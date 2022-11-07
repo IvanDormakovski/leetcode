@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Runner1379",
+            "request": "launch",
+            "mainClass": "Runner1379",
+            "projectName": "leetcode_b6f86014"
+        },
+        {
+            "type": "java",
+            "name": "Launch Runner1678",
+            "request": "launch",
+            "mainClass": "Runner1678",
+            "projectName": "leetcode_b6f86014"
+        },
+        {
+            "type": "java",
+            "name": "Launch Runner_1678",
+            "request": "launch",
+            "mainClass": "Runner_1678",
+            "projectName": "leetcode_b6f86014"
+        },
+        {
+            "type": "java",
+            "name": "Launch Runner",
+            "request": "launch",
+            "mainClass": "Runner",
+            "projectName": "leetcode_b6f86014"
+        }
+    ]
+}

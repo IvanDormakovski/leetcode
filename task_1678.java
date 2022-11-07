@@ -25,7 +25,7 @@
 // 1 <= command.length <= 100
 // command consists of "G", "()", and/or "(al)" in some order.
 
-class Solution {
+class Solution1678 {
     public String interpret(String command) {
         String result = command.replaceAll("()", "o").replaceAll("(al)", "al");
         return result;
@@ -34,7 +34,7 @@ class Solution {
 
 class Runner {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution1678 solution = new Solution1678();
         System.out.print("Test");
         System.out.print(solution.interpret("G()()()()(al)"));
     }
