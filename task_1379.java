@@ -53,7 +53,7 @@ class TreeNode implements Cloneable {
   }
 }
 
-class Solution {
+class Solution1379 {
   TreeNode ans, target;
 
 	public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
@@ -86,7 +86,7 @@ class Solution {
 //   }
 // }
 
-class Runner {
+class Runner1379 {
   public static void main(String[] args) throws CloneNotSupportedException {
     Solution solution = new Solution();
 

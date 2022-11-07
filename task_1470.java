@@ -25,7 +25,7 @@
 // nums.length == 2n
 // 1 <= nums[i] <= 10^3
 
-class Solution {
+class Solution1470 {
     public int[] shuffle(int[] nums, int n) {
         
         int len = nums.length;
@@ -81,7 +81,7 @@ class Solution {
 //     }
 // }
 
-class Runner {
+class Runner1470 {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] res = solution.shuffle(new int[] { 2, 5, 1, 3, 4, 7 }, 3);
